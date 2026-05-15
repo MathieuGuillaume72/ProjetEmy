@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFD3B6"/>
+      <stop offset="40%" stop-color="#F8B195"/>
+      <stop offset="100%" stop-color="#6C5B7B"/>
+    </linearGradient>
+    <linearGradient id="house" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5F1EA"/>
+      <stop offset="100%" stop-color="#D6CFC2"/>
+    </linearGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2C3E50"/>
+      <stop offset="100%" stop-color="#1A2530"/>
+    </linearGradient>
+    <linearGradient id="window" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFE7BD"/>
+      <stop offset="100%" stop-color="#FFC078"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5C8A5C"/>
+      <stop offset="100%" stop-color="#3A5E3A"/>
+    </linearGradient>
+    <linearGradient id="garage" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1F2D3D"/>
+      <stop offset="100%" stop-color="#0F1A26"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1100" height="900" fill="url(#sky)"/>
+
+  <!-- Sun -->
+  <circle cx="850" cy="240" r="80" fill="#FFE2B0" opacity="0.65"/>
+  <circle cx="850" cy="240" r="50" fill="#FFD68A" opacity="0.85"/>
+
+  <!-- Distant trees -->
+  <g opacity="0.55">
+    <ellipse cx="120" cy="640" rx="80" ry="50" fill="#2F4A2F"/>
+    <ellipse cx="200" cy="650" rx="90" ry="55" fill="#3A5E3A"/>
+    <ellipse cx="950" cy="640" rx="100" ry="55" fill="#2F4A2F"/>
+    <ellipse cx="1040" cy="650" rx="80" ry="50" fill="#3A5E3A"/>
+  </g>
+
+  <!-- Ground -->
+  <rect y="660" width="1100" height="240" fill="url(#ground)"/>
+  <path d="M0,660 Q200,650 400,665 T800,660 T1100,665 L1100,900 L0,900 Z" fill="url(#ground)"/>
+
+  <!-- Driveway -->
+  <path d="M380,900 L470,720 L640,720 L760,900 Z" fill="#9C9388" opacity="0.7"/>
+
+  <!-- Main house body -->
+  <rect x="280" y="430" width="540" height="290" fill="url(#house)"/>
+  <!-- Side wing -->
+  <rect x="720" y="490" width="180" height="230" fill="#E8E2D6"/>
+
+  <!-- Stone accent on left -->
+  <rect x="280" y="430" width="60" height="290" fill="#3D4A55"/>
+
+  <!-- Roof main -->
+  <polygon points="260,430 550,310 840,430" fill="url(#roof)"/>
+  <!-- Roof secondary -->
+  <polygon points="710,490 810,400 910,490" fill="#243240"/>
+
+  <!-- Solar panels on roof -->
+  <g transform="translate(360,360) rotate(-22)">
+    <rect width="60" height="36" fill="#1B2E4B" stroke="#0F1A26" stroke-width="1"/>
+    <rect x="62" width="60" height="36" fill="#1B2E4B" stroke="#0F1A26" stroke-width="1"/>
+    <rect x="124" width="60" height="36" fill="#1B2E4B" stroke="#0F1A26" stroke-width="1"/>
+    <rect y="38" width="60" height="36" fill="#1B2E4B" stroke="#0F1A26" stroke-width="1"/>
+    <rect x="62" y="38" width="60" height="36" fill="#1B2E4B" stroke="#0F1A26" stroke-width="1"/>
+    <rect x="124" y="38" width="60" height="36" fill="#1B2E4B" stroke="#0F1A26" stroke-width="1"/>
+  </g>
+
+  <!-- Chimney -->
+  <rect x="600" y="340" width="32" height="80" fill="#3A4754"/>
+
+  <!-- Windows - large modern -->
+  <g>
+    <rect x="370" y="470" width="80" height="120" fill="url(#window)" stroke="#1F2D3D" stroke-width="3"/>
+    <line x1="410" y1="470" x2="410" y2="590" stroke="#1F2D3D" stroke-width="2"/>
+    <rect x="490" y="470" width="80" height="120" fill="url(#window)" stroke="#1F2D3D" stroke-width="3"/>
+    <line x1="530" y1="470" x2="530" y2="590" stroke="#1F2D3D" stroke-width="2"/>
+  </g>
+
+  <!-- Front door -->
+  <rect x="610" y="540" width="64" height="180" fill="#1F2D3D"/>
+  <circle cx="660" cy="635" r="3" fill="#D4AF37"/>
+
+  <!-- Big modern window -->
+  <rect x="700" y="540" width="100" height="180" fill="url(#window)" stroke="#1F2D3D" stroke-width="3"/>
+  <line x1="750" y1="540" x2="750" y2="720" stroke="#1F2D3D" stroke-width="2"/>
+
+  <!-- Side wing window -->
+  <rect x="750" y="540" width="120" height="100" fill="url(#window)" stroke="#1F2D3D" stroke-width="3"/>
+  <line x1="810" y1="540" x2="810" y2="640" stroke="#1F2D3D" stroke-width="2"/>
+
+  <!-- Garage door -->
+  <rect x="740" y="650" width="140" height="70" fill="url(#garage)"/>
+  <line x1="740" y1="670" x2="880" y2="670" stroke="#2B3D52" stroke-width="1"/>
+  <line x1="740" y1="690" x2="880" y2="690" stroke="#2B3D52" stroke-width="1"/>
+  <line x1="740" y1="710" x2="880" y2="710" stroke="#2B3D52" stroke-width="1"/>
+
+  <!-- Front lawn shrubs -->
+  <ellipse cx="320" cy="730" rx="30" ry="14" fill="#2C4A2C"/>
+  <ellipse cx="370" cy="735" rx="22" ry="12" fill="#3D5E3D"/>
+  <ellipse cx="890" cy="730" rx="28" ry="14" fill="#2C4A2C"/>
+
+  <!-- Foreground tree -->
+  <g>
+    <rect x="60" y="500" width="14" height="200" fill="#3B2F1F"/>
+    <circle cx="67" cy="490" r="80" fill="#3A6B3A"/>
+    <circle cx="40" cy="470" r="55" fill="#4D7E4D"/>
+    <circle cx="100" cy="475" r="60" fill="#2E5A2E"/>
+  </g>
+</svg>

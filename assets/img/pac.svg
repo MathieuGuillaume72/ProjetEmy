@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgPac" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8F1FB"/>
+      <stop offset="100%" stop-color="#C9DBEF"/>
+    </linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5EFE5"/>
+      <stop offset="100%" stop-color="#DCD3C2"/>
+    </linearGradient>
+    <linearGradient id="pac" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5F5F5"/>
+      <stop offset="100%" stop-color="#C0C5CC"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="700" fill="url(#bgPac)"/>
+  <!-- House wall -->
+  <rect y="100" width="900" height="600" fill="url(#wall)"/>
+  <!-- Wall texture -->
+  <g opacity="0.1">
+    <line x1="0" y1="200" x2="900" y2="200" stroke="#7A6A52" stroke-width="1"/>
+    <line x1="0" y1="350" x2="900" y2="350" stroke="#7A6A52" stroke-width="1"/>
+    <line x1="0" y1="500" x2="900" y2="500" stroke="#7A6A52" stroke-width="1"/>
+  </g>
+  <!-- Window -->
+  <rect x="60" y="160" width="180" height="220" fill="#1F2D3D"/>
+  <rect x="70" y="170" width="80" height="100" fill="#FFD68A" opacity="0.85"/>
+  <rect x="155" y="170" width="80" height="100" fill="#FFD68A" opacity="0.85"/>
+  <rect x="70" y="280" width="80" height="95" fill="#FFD68A" opacity="0.85"/>
+  <rect x="155" y="280" width="80" height="95" fill="#FFD68A" opacity="0.85"/>
+  <!-- Ground -->
+  <rect y="580" width="900" height="120" fill="#8B9B7D"/>
+  <!-- Gravel area for unit -->
+  <ellipse cx="600" cy="600" rx="280" ry="20" fill="#A8A39A"/>
+
+  <!-- PAC outdoor unit -->
+  <g transform="translate(440,380)">
+    <!-- Shadow -->
+    <ellipse cx="160" cy="220" rx="160" ry="10" fill="#000" opacity="0.18"/>
+    <!-- Base / feet -->
+    <rect x="50" y="200" width="20" height="20" fill="#2C3E50"/>
+    <rect x="250" y="200" width="20" height="20" fill="#2C3E50"/>
+    <!-- Main body -->
+    <rect width="320" height="200" rx="14" fill="url(#pac)" stroke="#9CA4AE" stroke-width="2"/>
+    <!-- Top vent -->
+    <rect x="10" y="10" width="300" height="20" rx="6" fill="#2C3E50"/>
+    <!-- Brand badge -->
+    <rect x="20" y="42" width="80" height="14" rx="3" fill="#06B6A4"/>
+    <!-- Fan grille circular -->
+    <circle cx="220" cy="110" r="78" fill="#1F2D3D"/>
+    <circle cx="220" cy="110" r="70" fill="none" stroke="#0F1A26" stroke-width="2"/>
+    <!-- Fan blades -->
+    <g transform="translate(220,110)">
+      <path d="M 0,-60 Q 35,-25 0,0 Q -35,-25 0,-60 Z" fill="#3A4754"/>
+      <path d="M 60,0 Q 25,35 0,0 Q 25,-35 60,0 Z" fill="#3A4754"/>
+      <path d="M 0,60 Q -35,25 0,0 Q 35,25 0,60 Z" fill="#3A4754"/>
+      <path d="M -60,0 Q -25,-35 0,0 Q -25,35 -60,0 Z" fill="#3A4754"/>
+      <circle cx="0" cy="0" r="10" fill="#06B6A4"/>
+    </g>
+    <!-- Side grille (horizontal louvres) -->
+    <g transform="translate(20,80)" opacity="0.7">
+      <line x1="0" y1="0" x2="100" y2="0" stroke="#7A828C" stroke-width="2"/>
+      <line x1="0" y1="12" x2="100" y2="12" stroke="#7A828C" stroke-width="2"/>
+      <line x1="0" y1="24" x2="100" y2="24" stroke="#7A828C" stroke-width="2"/>
+      <line x1="0" y1="36" x2="100" y2="36" stroke="#7A828C" stroke-width="2"/>
+      <line x1="0" y1="48" x2="100" y2="48" stroke="#7A828C" stroke-width="2"/>
+      <line x1="0" y1="60" x2="100" y2="60" stroke="#7A828C" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- Cool air arrows -->
+  <g opacity="0.6" stroke="#06B6A4" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M820,420 q -20,-15 0,-30"/>
+    <path d="M840,440 q -20,-15 0,-30"/>
+    <path d="M820,460 q -20,-15 0,-30"/>
+  </g>
+</svg>

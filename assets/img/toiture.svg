@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9DC9E8"/>
+      <stop offset="100%" stop-color="#D8E9F2"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B85431"/>
+      <stop offset="100%" stop-color="#7C2E15"/>
+    </linearGradient>
+    <linearGradient id="tileClean" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D87850"/>
+      <stop offset="100%" stop-color="#A24528"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="700" fill="url(#sky3)"/>
+  <!-- House silhouette behind roof -->
+  <rect y="450" width="900" height="250" fill="#E0D4C2"/>
+  <!-- Main roof slope, big perspective -->
+  <polygon points="0,420 900,180 900,470 0,560" fill="url(#tile)"/>
+  <!-- Cleaned section (lighter) -->
+  <polygon points="200,470 900,180 900,300 320,520" fill="url(#tileClean)" opacity="0.85"/>
+  <!-- Tile pattern -->
+  <g opacity="0.45">
+    <line x1="0" y1="440" x2="900" y2="200" stroke="#5C2310" stroke-width="1"/>
+    <line x1="0" y1="465" x2="900" y2="225" stroke="#5C2310" stroke-width="1"/>
+    <line x1="0" y1="490" x2="900" y2="250" stroke="#5C2310" stroke-width="1"/>
+    <line x1="0" y1="515" x2="900" y2="275" stroke="#5C2310" stroke-width="1"/>
+    <line x1="0" y1="540" x2="900" y2="300" stroke="#5C2310" stroke-width="1"/>
+    <!-- vertical tile breaks -->
+    <line x1="100" y1="430" x2="100" y2="555" stroke="#5C2310" stroke-width="0.6"/>
+    <line x1="250" y1="395" x2="250" y2="540" stroke="#5C2310" stroke-width="0.6"/>
+    <line x1="400" y1="355" x2="400" y2="510" stroke="#5C2310" stroke-width="0.6"/>
+    <line x1="550" y1="315" x2="550" y2="480" stroke="#5C2310" stroke-width="0.6"/>
+    <line x1="700" y1="275" x2="700" y2="450" stroke="#5C2310" stroke-width="0.6"/>
+    <line x1="850" y1="235" x2="850" y2="420" stroke="#5C2310" stroke-width="0.6"/>
+  </g>
+  <!-- Moss patches (left, dirty area) -->
+  <g opacity="0.6">
+    <ellipse cx="80" cy="470" rx="22" ry="8" fill="#3A5E1E"/>
+    <ellipse cx="130" cy="490" rx="18" ry="7" fill="#456A22"/>
+    <ellipse cx="170" cy="500" rx="14" ry="6" fill="#3A5E1E"/>
+  </g>
+  <!-- Water droplets being cleaned -->
+  <g opacity="0.75">
+    <circle cx="450" cy="320" r="6" fill="#9FD3EC"/>
+    <circle cx="470" cy="335" r="4" fill="#9FD3EC"/>
+    <circle cx="490" cy="345" r="5" fill="#9FD3EC"/>
+    <circle cx="510" cy="360" r="3" fill="#9FD3EC"/>
+    <circle cx="530" cy="370" r="4" fill="#9FD3EC"/>
+  </g>
+  <!-- Pressure washer wand silhouette -->
+  <g transform="translate(420,260)">
+    <rect width="120" height="8" fill="#06B6A4" transform="rotate(35)"/>
+    <rect x="-20" y="-4" width="30" height="16" rx="4" fill="#0A2540" transform="rotate(35)"/>
+  </g>
+  <!-- Spray cone -->
+  <polygon points="520,290 580,280 590,310 540,330" fill="#9FD3EC" opacity="0.5"/>
+  <!-- Chimney -->
+  <rect x="600" y="220" width="40" height="100" fill="#7C2E15"/>
+  <rect x="600" y="215" width="40" height="10" fill="#A24528"/>
+</svg>
